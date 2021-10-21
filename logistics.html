@@ -14,9 +14,9 @@
     <nav class="navbar navbar-expand">
         <a class="navbar-brand mx-4" href="#"><img src="assets/bbi-logo.png" style="height:6vh;"></a>
         <div class="navbar-nav nav-pills">
-            <a class="nav-link active" href="$">HOME</a>
-            <a class="nav-link" href="#About">ABOUT</a>
-            <a class="nav-link" href="./logistics.html">LOGISTICS</a>
+            <a class="nav-link" href="./index.html">HOME</a>
+            <a class="nav-link" href="./index.html#About">ABOUT</a>
+            <a class="nav-link active" href="#">LOGISTICS</a>
             <div class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SCAN</a>
                 <div class="dropdown-menu">
@@ -28,36 +28,30 @@
         </div>
     </nav>
     <hr style="height:1px;width:80%;text-align:center;margin-left:10%;">
-    <div class="container">
-        <div class="row justify-content-center" style="height: 30vh;">
-            <div class="align-self-center">
-                <h1 style="text-align: center;">BBI Research Analytics</h1>
-                <h4 style="text-align: center;">Fully automated reporting and visualizations built to spark research and operational insight</h4>
-            </div>
-        </div>
-        <div class="card-holder row py-4 gy-4 justify-content-center">
-            <div class="col-sm-auto">
-                <a href="./scan.html" class="card shadow">
-                    <div class="card-body" style="text-align: center;">
-                        <img src="./assets/SCAN_logo_rgb.svg" class="p-1" style="height:10vh; width:auto;">
-                        <h3>SCAN Metrics</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-auto">
-                <a href="./logistics.html" class="card shadow">
-                    <div class="card-body" style="text-align: center;">
-                        <img src="./assets/logistics-icon.png" class="p-1" style="height:10vh; width:auto;">
-                        <h3>Logistics</h3>
-                    </div>
-                </a>
+    <div class="container-lg">
+        <div class="row justify-content-center p-2">
+            <div class="col card shadow" style="height: 100vh;">
+                <script type='text/javascript' src='https://bitools.uw.edu/javascripts/api/viz_v1.js'></script>
+                <div class='tableauPlaceholder' style='width: 100%; height: 100%;'>
+                    <object class='tableauViz' width='100%' height='100%' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fbitools.uw.edu%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='&#47;t&#47;Transitional' />
+                        <param name='name' value='WeeklyReviewv2&#47;PCSummaryDashboard' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='showAppBanner' value='false' />
+                    </object>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row p-3" id="About">
-        <h2 style="text-align: center;">About</h2>
-    </div>
-    </div>
+    <hr style="height:1px;width:90%;text-align:center;margin-left:5%;">
+    <footer class="container-fluid bg-secondary p-5">
+        <div class="row">
+            Footer
+        </div>
+    </footer>
 </body>
 
 </html>
