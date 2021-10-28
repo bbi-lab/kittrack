@@ -12,13 +12,13 @@
 
 <body>
     <nav class="navbar navbar-expand">
-        <a class="navbar-brand mx-4" href="#"><img src="assets/bbi-logo.png" style="height:6vh;"></a>
+        <a class="navbar-brand mx-4" href="index.html"><img src="assets/bbi-logo.png" style="height:6vh;"></a>
         <div class="navbar-nav nav-pills">
-            <a class="nav-link active" href="#">HOME</a>
-            <a class="nav-link" href="#About">ABOUT</a>
+            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="index.html#About">ABOUT</a>
             <a class="nav-link" href="dashboard/logistics.html">LOGISTICS</a>
             <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SCAN</a>
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SCAN</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="dashboard/scan-external.html">External Stakeholders</a>
                     <a class="dropdown-item" href="dashboard/scan-internal.html">Internal</a>
@@ -28,35 +28,46 @@
         </div>
     </nav>
     <hr style="height:1px;width:80%;text-align:center;margin-left:10%;">
-    <div class="container">
-        <div class="row justify-content-center" style="height: 30vh;">
+    <div class="container-fluid px-4">
+        <div class="row justify-content-center">
             <div class="align-self-center">
-                <h1 class="title-text" style="font-size: 3.5em;">BBI Research Analytics</h1>
-                <h4 class="title-text">Fully automated reporting and visualizations built to spark research and operational insight</h4>
+                <h2 style="text-align: center;">SCAN Metrics</h2>
             </div>
         </div>
         <div class="card-holder row py-4 gy-3 justify-content-center">
             <div class="col-sm-auto">
-                <a href="scan.html" class="card shadow">
+                <a href="dashboard/scan-external.html" class="card shadow">
                     <div class="card-body" style="text-align: center;">
-                        <img src="./assets/SCAN_logo_rgb.svg" class="p-1" style="height:15vh; width:auto;">
-                        <h3>SCAN Metrics</h3>
+                        <img src="./assets/SCAN_logo_rgb.svg" class="p-1 dashboard-preview">
+                        <h3>External Stakeholder Dashboard</h3>
                     </div>
                 </a>
             </div>
             <div class="col-sm-auto">
-                <a href="dashboard/logistics.html" class="card shadow">
+                <a href="dashboard/tpchd.html" class="card shadow">
                     <div class="card-body" style="text-align: center;">
-                        <img src="./assets/logistics-icon.png" class="p-1" style="height:15vh; width:auto;">
-                        <h3>Logistics</h3>
+                        <img src="assets/dashboard-previews/tpchd.png" class="p-1 dashboard-preview">
+                        <h3>TPCHD Dashboard</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="dashboard/scan-internal.html" class="card shadow">
+                    <div class="card-body" style="text-align: center;">
+                        <img src="./assets/logistics-icon.png" class="p-1 dashboard-preview">
+                        <h3>Internal Dashboard</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="dashboard/" class="card shadow">
+                    <div class="card-body" style="text-align: center;">
+                        <img src="./assets/logistics-icon.png" class="p-1 dashboard-preview">
+                        <h3>Residuals Dashboard</h3>
                     </div>
                 </a>
             </div>
         </div>
-    </div>
-    <div class="row p-3" id="About">
-        <h2 style="text-align: center;">About</h2>
-    </div>
     </div>
 </body>
 
