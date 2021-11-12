@@ -12,28 +12,32 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top px-3">
         <a class="navbar-brand mx-4" href="#"><img src="assets/bbi-logo.png" style="height:6vh;"></a>
-        <div class="navbar-nav nav-pills">
-            <a class="nav-link active" href="#">HOME</a>
-            <a class="nav-link" href="#About">ABOUT</a>
-            <a class="nav-link" href="dashboard/logistics.html">LOGISTICS</a>
-            <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SCAN</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="dashboard/scan-external.html">External Stakeholders</a>
-                    <a class="dropdown-item" href="dashboard/scan-internal.html">Internal</a>
-                    <a class="dropdown-item" href="dashboard/tpchd.html">TPCHD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navlinks">
+            <div class="navbar-nav nav-pills">
+                <a class="nav-link active" href="#">HOME</a>
+                <a class="nav-link" href="#about">ABOUT</a>
+                <a class="nav-link" href="dashboard/logistics.html">LOGISTICS</a>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SCAN</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dashboard/scan-external.html">External Stakeholders</a>
+                        <a class="dropdown-item" href="dashboard/scan-internal.html">Internal</a>
+                        <a class="dropdown-item" href="dashboard/tpchd.html">TPCHD</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-    <hr style="height:1px;width:80%;text-align:center;margin-left:10%;">
-    <div class="container">
+    <div class="container-fluid pb-5" style="min-height: 80vh; padding-top: 15vh;" id="landing">
         <div class="row justify-content-center" style="height: 30vh;">
             <div class="align-self-center">
-                <h1 class="title-text" style="font-size: 3.5em;">BBI Research Analytics</h1>
-                <h4 class="title-text">Fully automated reporting and visualizations built to spark research and operational insight</h4>
+                <h1 class="display-2 text-center">BBI Research Analytics</h1>
+                <h4 class="display-6 text-center">Fully automated reporting and visualizations built to spark research and operational insight</h4>
             </div>
         </div>
         <div class="card-holder row py-4 gy-3 justify-content-center">
@@ -55,9 +59,13 @@
             </div>
         </div>
     </div>
-    <div class="row p-3" id="About">
-        <h2 style="text-align: center;">About</h2>
-    </div>
+    <div class="container-fluid py-5" id='about'>
+        <div class="row px-3 justify-content-center">
+            <div class='col-md-8'>
+                <h2 class="display-3 text-center">About</h2>
+                <p class='lead text-center' style='font-size: 1.5em;'>Visualizatons are built using Tableau (version 2021.2) and linked to aggregated data stored in Google Sheets. Python ETLs are executed on daily/weekly schedules to update the data in Google Sheets. The ETLs source data from <a href="https://redcap.iths.org/redcap_v11.3.4/API/help.php">REDCap's API</a> and the <a href="https://github.com/seattleflu/id3c">ID3C research database</a></p>
+            </div>
+        </div>
     </div>
 </body>
 
