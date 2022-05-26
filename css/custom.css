@@ -18,9 +18,11 @@
 }
 
 a:visited {
-        color:  inherit;
+    color:  inherit;
 }
-
+a {
+    color:  inherit;
+}
 .nav-pills > .nav-link.active,
 .nav-pills > .dropdown > .nav-link.active {
     background-color: #005587;

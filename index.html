@@ -5,16 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBI Analytics</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-light px-3">
         <a class="navbar-brand mx-4" href="#"><img src="assets/bbi-logo.png" style="height:6vh;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navlinks">
@@ -23,11 +29,15 @@
                 <a class="nav-link" href="#about">ABOUT</a>
                 <a class="nav-link" href="dashboard/logistics.html">LOGISTICS</a>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SCAN</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">SCAN</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="dashboard/scan-external.html">External Stakeholders</a>
                         <a class="dropdown-item" href="dashboard/scan-internal.html">Internal</a>
                         <a class="dropdown-item" href="dashboard/tpchd.html">TPCHD</a>
+                        <a class="dropdown-item" href="dashboard/residuals.html">Residuals</a>
+                        <a class="dropdown-item" href="dashboard/ve.html">VE</a>
+                        <a class="dropdown-item" href="dashboard/afh.html">AFH Workplace</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +47,8 @@
         <div class="row justify-content-center" style="height: 30vh;">
             <div class="align-self-center">
                 <h1 class="display-2 text-center">BBI Research Analytics</h1>
-                <h4 class="display-6 text-center">Fully automated reporting and visualizations built to spark research and operational insight</h4>
+                <h4 class="display-6 text-center">Fully automated reporting and visualizations built to spark research
+                    and operational insight</h4>
             </div>
         </div>
         <div class="card-holder row py-4 gy-3 justify-content-center">
@@ -63,7 +74,11 @@
         <div class="row px-3 justify-content-center">
             <div class='col-md-8'>
                 <h2 class="display-3 text-center">About</h2>
-                <p class='lead text-center' style='font-size: 1.5em;'>Visualizatons are built using Tableau (version 2021.2) and linked to aggregated data stored in Google Sheets. Python ETLs are executed on daily/weekly schedules to update the data in Google Sheets. The ETLs source data from <a href="https://redcap.iths.org/redcap_v11.3.4/API/help.php">REDCap's API</a> and the <a href="https://github.com/seattleflu/id3c">ID3C research database</a></p>
+                <p class='lead text-center' style='font-size: 1.5em;'>Visualizatons are built using Tableau (version
+                    2021.2) and linked to aggregated data stored in Google Sheets. Python ETLs are executed on
+                    daily/weekly schedules to update the data in Google Sheets. The ETLs source data from <a
+                        href="https://redcap.iths.org/redcap_v11.3.4/API/help.php">REDCap's API</a> and the <a
+                        href="https://github.com/seattleflu/id3c">ID3C research database</a></p>
             </div>
         </div>
     </div>
